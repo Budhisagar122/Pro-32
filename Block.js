@@ -27,8 +27,10 @@ class Block{
         }
         else{
           World.remove(world,this.body);
+          push();
+          this.visibility=this.visibility-5;
           tint(255,this.visibility);
-          
+          pop();
         }
        
       }
@@ -37,5 +39,8 @@ class Block{
           score++;
         }
         
+      textSize(20);
+      stroke("orange");
+       text("SCORE :"+score,750,40);
       }
 }

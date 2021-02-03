@@ -79,9 +79,6 @@ function draw() {
   text("Drag the Hexagonal Stone and Release it, to launch it towards the blocks",100,30);
 
   
-  textSize(20);
-  stroke("orange");
-   text("SCORE :"+score,750,40);
 
   ground.display();
   stand1.display();
